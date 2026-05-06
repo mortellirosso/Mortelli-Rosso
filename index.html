@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortelli Rosso | GTA 5 RP Family</title>
+    <title>Mortelli Rosso | GTA 5 RP</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -22,131 +22,125 @@
 
         header {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.wallpaperscraft.ru/image/single/gta_5_grand_theft_auto_v_vignette_95333_1920x1080.jpg'); /* Заглушка фона */
+            /* ВАЖНО: Название картинки должно совпадать с тем, что ты загрузишь на GitHub */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                        url('image_24c09a.jpg'); 
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             text-align: center;
-            border-bottom: 3px solid var(--main-red);
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            color: var(--main-red);
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            padding-bottom: 80px;
+            border-bottom: 4px solid var(--main-red);
         }
 
         .motto {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: var(--text-gold);
             letter-spacing: 5px;
             margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px #000;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
         .section {
-            background: rgba(20, 20, 20, 0.8);
+            background: rgba(20, 20, 20, 0.9);
             border-left: 5px solid var(--main-red);
             padding: 30px;
-            margin-bottom: 40px;
-            transition: 0.3s;
-        }
-
-        .section:hover {
-            transform: translateX(10px);
-            background: rgba(30, 30, 30, 0.9);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
         }
 
         h2 {
             color: var(--main-red);
+            font-family: 'Playfair Display', serif;
             text-transform: uppercase;
-        }
-
-        .requirements ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .requirements li::before {
-            content: "•";
-            color: var(--main-red);
-            font-weight: bold;
-            display: inline-block; 
-            width: 1em;
-            margin-left: -1em;
+            margin-top: 0;
         }
 
         .btn {
             display: inline-block;
             background: var(--main-red);
             color: white;
-            padding: 15px 40px;
+            padding: 18px 45px;
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
-            border-radius: 3px;
             transition: 0.3s;
+            border: 1px solid var(--main-red);
             cursor: pointer;
         }
 
         .btn:hover {
-            background: #ff0000;
-            box-shadow: 0 0 20px rgba(139, 0, 0, 0.6);
+            background: transparent;
+            color: var(--main-red);
+            box-shadow: 0 0 25px rgba(139, 0, 0, 0.6);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "▪ ";
+            color: var(--main-red);
+            position: absolute;
+            left: 0;
         }
 
         footer {
             text-align: center;
             padding: 40px;
-            color: #555;
             font-size: 0.8rem;
+            color: #444;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Mortelli Rosso</h1>
-        <p class="motto">Семья. Честь. Кровь.</p>
-        <a href="#join" class="btn">Вступить в семью</a>
+        <p class="motto">Семья. Честь. Уважение.</p>
+        <a href="https://discord.gg/WgS7cyW7M" target="_blank" class="btn">Вступить в семью</a>
     </header>
 
     <div class="container">
         <div class="section">
-            <h2>Кто мы такие?</h2>
-            <p>Мы — криминальная структура, чьи корни уходят глубоко в историю Лос-Сантоса. Mortelli Rosso — это не просто организация, это братство, где каждый готов отдать жизнь за другого. Мы контролируем бизнес, наводим порядок на улицах и не прощаем предательства.</p>
+            <h2>Кодекс Mortelli Rosso</h2>
+            <p>Мы — элитный синдикат, где преданность ценится превыше всего. Если ты ищешь не просто фракцию, а настоящую семью, ты пришел по адресу.</p>
         </div>
 
-        <div class="section requirements" id="join">
-            <h2>Критерии вступления</h2>
+        <div class="section">
+            <h2>Наши требования</h2>
             <ul>
-                <li>Проживание в штате от 3-х лет (3+ лвл);</li>
-                <li>Наличие лицензии на оружие и вождение;</li>
-                <li>Адекватность и знание правил штата (RP термины);</li>
-                <li>Опрятный внешний вид (деловой стиль приветствуется);</li>
-                <li>Готовность беспрекословно следовать приказам старшего состава.</li>
+                <li>Проживание в штате от 3-х лет.</li>
+                <li>Наличие спец. связи и рабочего микрофона.</li>
+                <li>Знание RP и соблюдение субординации.</li>
+                <li>Желание работать на благо семьи.</li>
             </ul>
         </div>
 
-        <div style="text-align: center;">
-            <p style="font-style: italic; color: var(--text-gold);">"Тот, кто предает семью, теряет всё."</p>
-            <a href="https://discord.gg/your_link" target="_blank" class="btn">Подать заявку в Discord</a>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://discord.gg/WgS7cyW7M" target="_blank" class="btn">Наш Discord</a>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Mortelli Rosso Family | GTA 5 RP Project
+        &copy; 2026 Mortelli Rosso | GTA 5 RP Family
     </footer>
 
 </body>
